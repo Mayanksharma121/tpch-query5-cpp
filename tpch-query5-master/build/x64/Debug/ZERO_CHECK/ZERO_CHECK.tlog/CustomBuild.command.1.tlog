@@ -1,0 +1,10 @@
+^C:\USERS\MAYANK SHARMA\DOWNLOADS\TPCH-QUERY5-MASTER\TPCH-QUERY5-MASTER\BUILD\CMAKEFILES\37C94DE8DDDD6CB4F30A0D81401BA502\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Mayank Sharma/Downloads/tpch-query5-master/tpch-query5-master" "-BC:/Users/Mayank Sharma/Downloads/tpch-query5-master/tpch-query5-master/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Mayank Sharma/Downloads/tpch-query5-master/tpch-query5-master/build/tpch_query5.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
